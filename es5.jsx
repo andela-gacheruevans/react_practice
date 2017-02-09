@@ -16,9 +16,10 @@ var ComponentTwoB = React.createClass({
 		return(
 			<div>
 				<h1 style={{color:'#F76F00'}}>Imported Es5 Implementation </h1>
-				<div style={{color:'#000'}}><p>Component One.</p></div>
+				<div style={{color:'#000'}}><p>Component Two.</p></div>
 			</div>
 		)
 	}
 })
 ReactDOM.render(<ComponentOneA />, document.getElementById('body'))
+
