@@ -14,7 +14,8 @@ class Gender extends React.Component{
                     {arr.map(value, index => 
                         {
                         return value.m === 'male'?  <li key={index}>{value.name} is a male.</li> : <li key={index}>{value.name} is a female.</li>
-                        )}}
+                        )}
+                    }
                 </div>
             </div>
         );
