@@ -3,7 +3,7 @@ class ComponentOne extends React.Component{
 		return(
 			<div style={{borderBottom: '1px solid #333'}}>
 				<h1 style={{color:'#85E023'}}>Welcome to Learning Es6 and Es5 with React </h1>
-				<ul>
+				<ol>
 					<li>
 						<a href="event_listener&props_example/app.html">Event Listeners & Props Example</a>
 					</li>
@@ -31,7 +31,10 @@ class ComponentOne extends React.Component{
 					<li>
 						<a href="ternary_operator_example/app.html">Ternary Operator Example</a>
 					</li>
-				</ul>
+					<li>
+						<a href="states/app.html">Stateful Example</a>
+					</li>
+				</ol>
 			</div>
 		);
 	}
