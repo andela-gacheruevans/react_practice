@@ -33,22 +33,22 @@ class ComponentForm extends React.Component{
 				<form onSubmit={this.handleSubmit}>
 					<div>
 						<label style={{padding:'4px',textAlign:'left'}}>First Name</label>
-						<input style={{padding:'4px',textAlign:'center'}} name="fname" type='text' value={this.state.fname} onChange={this.handleUserInput} />
+						<input style={{padding:'4px',textAlign:'center'}} name="fname" type='text' value={this.state.fname} onChange={this.handleUserInput} placeholder='First Name' required/>
 						<label style={{padding:'4px',textAlign:'left'}}>Email</label>
-						<input style={{padding:'4px',textAlign:'center'}} name="email" type='text' value={this.state.email} onChange={this.handleUserInput} />
+						<input style={{padding:'4px',textAlign:'center'}} name="email" type='text' value={this.state.email} onChange={this.handleUserInput} placeholder='Email'required/>
 					</div>
 					<div style={{padding:'8px'}}>
 						<label style={{padding:'4px',textAlign:'left'}}>Last Name</label>
-						<input style={{padding:'4px',textAlign:'center'}} name="lname" type='text' value={this.state.lname} onChange={this.handleUserInput} />
+						<input style={{padding:'4px',textAlign:'center'}} name="lname" type='text' value={this.state.lname} onChange={this.handleUserInput} placeholder='Last Name' required/>
 						<label style={{padding:'4px',textAlign:'left'}}>Age</label>
-						<input style={{padding:'4px',textAlign:'center'}} name="age" type='text' value={this.state.age} onChange={this.handleUserInput} />
+						<input style={{padding:'4px',textAlign:'center'}} name="age" type='text' value={this.state.age} onChange={this.handleUserInput} placeholder='Age' required/>
 					</div>
 					<div style={{padding:'8px'}}>
 						<label style={{padding:'4px',textAlign:'left'}}>Password</label>
-						<input style={{padding:'4px',textAlign:'center'}} name="password" type='password' value={this.state.password} onChange={this.handleUserInput}/>
+						<input style={{padding:'4px',textAlign:'center'}} name="password" type='password' value={this.state.password} onChange={this.handleUserInput} placeholder='**********' required/>
 						<label style={{padding:'4px',textAlign:'left'}}>Country</label>
-						<select style={{padding:'8px',textAlign:'center'}} name="country" type='text' value={this.state.country} onChange={this.handleUserInput}>
-							<option></option>
+						<select style={{padding:'8px',textAlign:'center'}} name="country" type='text' value={this.state.country} onChange={this.handleUserInput} required>
+							<option value="" disabled selected>Select Country</option>
 							<option value='America'>America</option>
 							<option value='Australia'>Australia</option>
 							<option value='Austria'>Austria</option>
